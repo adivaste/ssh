@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-PASS="adivaste"
+PASS="pass"
 
 echo $PASS | sudo -S cp ./installReqs.sh ./runDaily.sh /tmp
 echo $PASS | sudo -S chmod 777 /tmp/installReqs.sh 
