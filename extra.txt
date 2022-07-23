@@ -1,0 +1,4 @@
+For newly created docker container :
+
+tmux new-session -d -s {session_name} "sudo docker run -it {container_name} /bin/bash -c 'service ssh start && /tmp/ngrok tcp 22' "
+(tmux new-session -d -s ngrok "sudo docker run -it aditya45/ngrok-setup /bin/bash -c 'service ssh start && /tmp/ngrok tcp 22' ")
