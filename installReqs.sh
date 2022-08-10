@@ -11,7 +11,7 @@ echo $PASS | sudo -S sh -c 'echo "PermitRootLogin" yes | sudo tee -a /etc/ssh/ss
 echo $PASS | sudo -S sh -c 'echo "PasswordAuthentication" yes | sudo tee -a /etc/ssh/sshd_config'
 
 #echo $PASS | sudo -S curl -o /tmp/ngrok-v3-stable-linux-amd64.tgz https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
-echo $PASS | sudo -S tar zxvf ./ngrok_stable.tgz -C /tmp
+echo $PASS | sudo -S tar zxvf ./ngrok_stable.tgz -C /tmp 
 
 echo $PASS | sudo -S chmod 777 /tmp/ngrok
 echo $PASS | sudo -S /tmp/ngrok authtoken 2CCFwZdVTWE9GM5EgD0pgd8Enrp_51BVfh8hsJwScNr58KtTD
