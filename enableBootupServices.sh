@@ -21,7 +21,7 @@ echo $PASS sudo -S mkdir -p /etc/systemd/system/
 echo $PASS sudo -S mv /home/rc-local.service /etc/systemd/system/
 
 # Creating the "rc.local" file 
-echo $PASS | sudo -S sh -c "printf '%s\n' '#!/bin/bash' '/bin/bash /etc/runDaily.sh' 'exit 0' | sudo tee -a /etc/rc.local"
+echo $PASS | sudo -S sh -c "printf '%s\n' '#!/bin/bash' '/bin/bash /tmp/runDaily.sh' 'exit 0' | sudo tee -a /etc/rc.local"
 echo $PASS | sudo -S chmod +x /etc/rc.local
 
 # Starting the required services
