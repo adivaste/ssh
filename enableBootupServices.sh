@@ -1,5 +1,5 @@
 # Password
-PASS="123456"
+PASS=$root_pass
 
 # Creating the "rc-local.service file in home directory and moving again to "/etc/systemd/system/"
 echo $PASS sudo -S sh -c "echo '[Unit]
