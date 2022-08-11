@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PASS="pass"
+PASS=$root_pass
 
 echo $PASS | sudo -S apt-get update
 echo $PASS | sudo -S apt-get upgrade -y
